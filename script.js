@@ -34,7 +34,6 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-
 const audio = document.getElementById('audio');
 const playButton = document.getElementById('play-button');
 const playIcon = document.getElementById('play-icon');
@@ -83,54 +82,8 @@ function drawWave() {
   }
 }
 
-
-
-
 window.addEventListener('scroll', mostrarAnimado);
 window.addEventListener('load', mostrarAnimado);
-
-// Cuenta regresiva
-const diasEl = document.getElementById('dias');
-const horasEl = document.getElementById('horas');
-const minutosEl = document.getElementById('minutos');
-const segundosEl = document.getElementById('segundos');
-
-function actualizarContador() {
-  const fechaEvento = new Date("2025-06-14T00:00:00").getTime();
-  const ahora = new Date().getTime();
-  const diferencia = fechaEvento - ahora;
-
-  const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-  const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-  document.getElementById("contador").innerHTML = `
-    <div>
-      <span class="numero">${dias}</span>
-      <span class="etiqueta">Días</span>
-    </div>
-    <div class="separador">:</div>
-    <div>
-      <span class="numero">${horas}</span>
-      <span class="etiqueta">Horas</span>
-    </div>
-    <div class="separador">:</div>
-    <div>
-      <span class="numero">${minutos}</span>
-      <span class="etiqueta">Min</span>
-    </div>
-    <div class="separador">:</div>
-    <div>
-      <span class="numero">${segundos}</span>
-      <span class="etiqueta">Seg</span>
-    </div>
-  `;
-}
-
-setInterval(actualizarContador, 1000);
-actualizarContador();
-
 
 /* Confirmación de asistencia */
 const formulario = document.getElementById('formulario');
@@ -168,40 +121,3 @@ formulario.addEventListener('submit', function(e) {
     console.error('Error:', error);
   });
 });
-
-
-/* Playlist de canciones */
-const formPlaylist = document.getElementById('formPlaylist');
-
-formPlaylist.addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  const cancion = document.getElementById('cancion').value.trim();
-  
-  if (cancion === "") {
-    alert("Por favor escribe una canción o link.");
-    return;
-  }
-
-  fetch('https://script.google.com/macros/s/AKfycbxFDYFuyXXv9Kwt8Bqcs_mSUdJgOgFfZ3ubDOBKtHapwT6eu0oBoI--CcoH32X3N-dBAg/exec', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: `tipo=playlist&cancion=${encodeURIComponent(cancion)}`
-  })
-  .then(response => response.text())
-  .then(data => {
-    if (data === "ok") {
-      document.getElementById('mensajePlaylist').textContent = "¡Canción agregada a la playlist! 🎶";
-      formPlaylist.reset();
-    } else {
-      document.getElementById('mensajePlaylist').textContent = "Ocurrió un error. Intenta de nuevo.";
-    }
-  })
-  .catch(error => {
-    alert("Error de conexión.");
-    console.error('Error:', error);
-  });
-});
-
