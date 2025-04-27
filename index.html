@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis XV Años - Sofia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="portada">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <div class="texto-portada animar">
+        <h1>MIS XV AÑOS</h1>
+        <h2>Sofía</h2>
+        <p>07 DE JUNIO 2025</p>
+    </div>
+    <div class="scroll-indicator">
+        <p>Desliza</p>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+    </div>
+  </section>
+
+  <section class="mensaje">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h3>"Te invito a celebrar el comienzo de un capítulo muy especial en mi vida, lleno de ilusiones, nuevos sueños y momentos inolvidables."</h3>
+    <h4>Escucha aquí la canción</h4>
+  
+    <div class="audio-player">
+      <button id="play-button">
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#b88a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
+      <canvas id="waveform" width="200" height="40"></canvas>
+    </div>
+    
+    <audio id="audio" src="assets/Evangeline-La princesa y el sapo Canción.mp3"></audio>    
+  </section>
+  
+  <section class="agradecer">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h2>Con la bendición de Dios y en compañía de mis padres.</h2>
+    <h1>Erika</h1>
+    <h2>&</h2>
+    <h1>Jorge</h1>
+    <h2>Nos complace invitarte a ser parte de este gran día.</h2>
+  </section>
+ <!--
+  <section class="cuenta">
+    <h1>Mi gran día:</h1>
+    <h1>14 De Junio</h1>
+    <h1>2025</h1>
+    <h3>ESTO FALTA PARA MI DÍA SOÑADO</h3>
+    <div id="contador">
+      <div class="tiempo">
+        <span id="dias">00</span>
+        <p>Días</p>
+      </div>
+      <div class="tiempo">
+        <span id="horas">00</span>
+        <p>Horas</p>
+      </div>
+      <div class="tiempo">
+        <span id="minutos">00</span>
+        <p>Minutos</p>
+      </div>
+      <div class="tiempo">
+        <span id="segundos">00</span>
+        <p>Segundos</p>
+      </div>
+    </div>    
+  </section>
+  -->
+
+  <section class="lugar">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h1>¿Dónde y Cuándo?</h1>
+    <!--<img src="assets/lugar.jpg" alt="iglesia"> -->
+    <h3>Ubicación</h3>
+    <h2>Kilometro 3  vía Sirivana</h2>
+    <h4>YOPAL - CASANARE</h4>
+    <a class="boton-ubicacion" href="https://maps.app.goo.gl/PWrJQqXq9uDB6mwg8?g_st=aw" target="_blank">
+      Ver Mapa
+    </a>
+  </section>
+  
+  <section class="itinerario">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h3>Te compartimos los detalles de la celebración</h3>
+    <ul>
+      <li>
+        <div class="linea-itinerario">
+          <span class="estrella">⚜️</span>
+          <div class="conector"></div>
+        </div>
+        <img src="assets/reserva.png" alt="Recepción">
+        Recepción: 6:00 PM
+      </li>
+      <!--
+      <li>
+        <div class="linea-itinerario">
+          <span class="estrella">⭐</span>
+          <div class="conector"></div>
+        </div>
+        <img src="assets/food.png" alt="Cena">
+        Cena: 8:00 PM
+      </li>
+      <li>
+        <div class="linea-itinerario">
+          <span class="estrella">⭐</span>
+          <div class="conector"></div>
+        </div>
+        <img src="assets/dj.png" alt="Fiesta">
+        Fiesta: 9:00 PM
+      </li>
+        -->
+    </ul>
+  </section>
+
+  <section class="confirmar">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h1>Confirma tu Asistencia</h1>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <button type="submit">Confirmar</button>
+    </form> 
+    <h2>"Tu presencia es el regalo más bonito. ¡Confírmanos si podrás acompañarnos!"</h2>
+  </section>
+  
+
+  <section class="vestimenta">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h1>Código de Vestimenta</h1>
+    <img src="assets/vestuario2.png" alt="Formal">
+    <p>CASUAL</p>
+  </section>
+
+  <section class="sobreslluvia">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h1>Lluvia de Sobres</h1>
+    <img src="assets/sobres11.png" alt="sobre">
+    <!--
+    <h2>Cuenta Bancaria</h2>
+    <h4>Nequi:</h4>
+    <h3>Silvia Mateus</h3>
+    <h5>3123774090</h5>
+    -->
+  </section>
+  <!--
+  <section class="playlist">
+    <h1>¿Me ayudas con la playlist?</h1>
+    <h3>Agrega aquí tu canción favorita y que no puede faltar.</h3>
+  
+    <form id="formPlaylist">
+      <input type="text" id="cancion" placeholder="Nombre o link de la canción" required>
+      <button type="submit">
+        Agregar Canción
+      </button>
+    </form>
+    
+    <div id="mensajePlaylist"></div>
+  </section>
+    -->
+  <section class="agradecimientos">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <h1>"Gracias por estar presente en este capítulo tan especial de mi vida. Tu compañía lo hace aún más inolvidable."</h1>
+  
+  </section>
+  <!-- Footer 
+  <section class="galeria">
+    <img src="assets/1.jpg" class="animar" alt="Foto 1">
+    <img src="assets/2.jpg" class="animar" alt="Foto 2">
+    <img src="assets/3.jpg" class="animar" alt="Foto 3">
+  </section>
+  -->
+  <section class="calendario">
+    <!-- Partículas de luz -->
+    <div class="destello" style="top:10%; left:20%; animation-delay: 0s;"></div>
+    <div class="destello" style="top:30%; left:80%; animation-delay: 5s;"></div>
+    <div class="destello" style="top:70%; left:40%; animation-delay: 10s;"></div>
+    <div class="destello" style="top:50%; left:10%; animation-delay: 15s;"></div>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+Años+Sofia&dates=20250607T170000Z/20250607T230000Z&details=Mis+XV+Años+de+Sofia" target="_blank">Añadir a mi Calendario</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
